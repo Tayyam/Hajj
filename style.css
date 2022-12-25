@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 700;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    cursor: pointer;
+}
+
+.logo p {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: rgba(0, 0, 0, 0.4);
+    padding-right: 0.4rem;
+}
+
+.logo img {
+    width: 25rem;
+}
+
+.statement img {
+    width: 2rem;
+
+}
+
+.statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.box h1 {
+    height: 1.5em;
+}
+
+.box p {
+    font-weight: 500;
+}
+
+.box-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    outline: none;
+    aspect-ratio: 1/1;
+    box-shadow: rgb(128 138 157 / 16%) 0px 8px 32px, rgb(128 138 157 / 12%) 0px 1px 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+
+.box-child:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .statement {
+        padding-top: 0rem;
+        ;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .logo img {
+        width: 15rem;
+    }
+
+    .logo p {
+        font-size: 1.2rem;
+    }
+
+    .box {
+        flex-direction: column;
+        height: 60vh;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {}
